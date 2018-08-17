@@ -1,0 +1,27 @@
+<!-- listNounsVerbs.html-->
+
+{% extends "base.html" %}
+{% block title %}Base Words{% endblock %}
+{% block body %}
+<div class="jumbotron">
+<h2> Nouns and their count</h2>
+<table>
+{% for key, value in result1.items() %}
+   <tr>
+        <th> {{ key }} </th>
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table><hr>
+<h2> Verbs and their count</h2>
+<table>
+{% for key, value in result2.items() %}
+   <tr>
+        <th> {{ key }} </th>
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}
+

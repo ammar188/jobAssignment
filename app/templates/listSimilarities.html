@@ -1,0 +1,17 @@
+<!-- listSimilarities.html-->
+
+{% extends "base.html" %}
+{% block title %}Similarities{% endblock %}
+{% block body %}
+<div class="jumbotron">
+<h2>list of similarities</h2>
+<table>
+{% for value in result %}
+   <tr>
+        
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

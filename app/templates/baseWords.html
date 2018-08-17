@@ -1,0 +1,13 @@
+<!-- baseWords.html-->
+
+{% extends "base.html" %}
+{% block title %}Base Words{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <a href="http://127.0.0.1:5000/baseWords/listAll">list all unique base words and their respective counts</a><br>
+  <form method="POST">Enter base word or a lemma of the base word (Ex: go or going) for its count:
+    <input name="text">
+    <input type="submit">
+  </form>
+</div>
+{% endblock %}

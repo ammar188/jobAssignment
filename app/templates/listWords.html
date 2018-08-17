@@ -1,0 +1,17 @@
+<!-- baseWords.html-->
+
+{% extends "base.html" %}
+{% block title %}Base Words{% endblock %}
+{% block body %}
+<div class="jumbotron">
+<h2> Base Words and their count</h2>
+<table>
+{% for key, value in result.items() %}
+   <tr>
+        <th> {{ key }} </th>
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

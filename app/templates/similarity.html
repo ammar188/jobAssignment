@@ -1,0 +1,24 @@
+<!-- similarity.html-->
+
+{% extends "base.html" %}
+{% block title %}Similarity{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <form method="POST">
+  <h2> Select two books to compare or select all for total compaison</h2>
+  <h3> Option 1</h3>
+  <input type="radio" name="book1" value="0"> The Notebooks of Leonardo Da Vinci <br>
+  <input type="radio" name="book1" value="1"> The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson<br>
+  <input type="radio" name="book1" value="2"> Ulysses by James Joyce<br> 
+  <input type="radio" name="book1" value="3"> The Picture of Dorian Gray by Oscar Wilde<br>
+  <input type="radio" name="book1" value="4" checked> All<br>
+  
+  <h3> Option 2</h3>
+  <input type="radio" name="book2" value="0" checked> The Notebooks of Leonardo Da Vinci <br>
+  <input type="radio" name="book2" value="1"> The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson<br>
+  <input type="radio" name="book2" value="2"> Ulysses by James Joyce<br> 
+  <input type="radio" name="book2" value="3"> The Picture of Dorian Gray by Oscar Wilde<br><br>
+  <input type="submit">
+</form>
+</div>
+{% endblock %}
