@@ -164,10 +164,10 @@ cursor.execute("CREATE TABLE similarities (book1_ID int, book2_ID int, similarit
 
 
 sql = "INSERT INTO similarities (book1_ID, book2_ID, similarity) VALUES (%s, %s, %s)"
-vals = [(0,0,similarity1[0]*100),(0,1,similarity1[1]*100),(0,2,similarity1[2]*100),(0,3,similarity1[3]*100),
-        (1,0,similarity2[0]*100),(1,1,similarity2[1]*100),(1,2,similarity2[2]*100),(1,3,similarity2[3]*100),
-        (2,0,similarity3[0]*100),(2,1,similarity3[1]*100),(2,2,similarity3[2]*100),(2,3,similarity3[3]*100),
-        (3,0,similarity4[0]*100),(3,1,similarity4[1]*100),(3,2,similarity4[2]*100),(3,3,similarity4[3]*100)
+vals = [(0,0,str(similarity1[0]*100)),(0,1,str(similarity1[1]*100)),(0,2,str(similarity1[2]*100)),(0,3,str(similarity1[3]*100)),
+        (1,0,str(similarity2[0]*100)),(1,1,str(similarity2[1]*100)),(1,2,str(similarity2[2]*100)),(1,3,str(similarity2[3]*100)),
+        (2,0,str(similarity3[0]*100)),(2,1,str(similarity3[1]*100)),(2,2,str(similarity3[2]*100)),(2,3,str(similarity3[3]*100)),
+        (3,0,str(similarity4[0]*100)),(3,1,str(similarity4[1]*100)),(3,2,str(similarity4[2]*100)),(3,3,str(similarity4[3]*100))
        ]
 
 cursor.executemany(sql,vals)
