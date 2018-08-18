@@ -3,10 +3,10 @@ A job assignment to test ones ability to work in an organization as a profession
 This assignment is to test a fresh graduate but will work for an AI / backend developer too.
 # Installation
 Step 1  
-pip install -r requirements.txt. 
+pip install -r requirements.txt.   
 Step 2   
 Install nltk data:  
-python nltkData.py  
+python nltkData.py     
 Step 3 set up the database:  
 cd nlp  
 python nlp.py  
